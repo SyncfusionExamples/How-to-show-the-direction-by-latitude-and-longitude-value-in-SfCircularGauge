@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    x:Class="Jafaria.Compass" 
+    xmlns:SyncfusionGauge="clr-namespace:Syncfusion.SfGauge.XForms;assembly=Syncfusion.SfGauge.XForms"
+>
+    <ContentPage.Content>
+    <Grid Padding="20" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="70" />
+            <RowDefinition Height="50" />
+            <RowDefinition Height="Auto" />
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                    <RowDefinition Height="1*"></RowDefinition>
+                </Grid.RowDefinitions> 
+           
+        <Label x:Name="LabelLocationName" Text="Country : India" Grid.Row="0" FontAttributes="Bold" TextColor="Black" />
+                <Label x:Name="LabelLocationLatitude" Text="Latitude : 20.593683" Grid.Row="1" FontAttributes="Bold" TextColor="Black" />
+                <Label x:Name="LabelLocationLogitude" Text="Logitude : 78.962883" Grid.Row="2" FontAttributes="Bold" TextColor="Black" />
+            </Grid>
+        <Button x:Name="btnCompassOtherLocations" Grid.Row="1" Margin="20,0,0,0" Text="Location"  Clicked="btnCompassOtherLocations_Clicked"></Button>
+            <SyncfusionGauge:SfCircularGauge Grid.Row="2" x:Name="circularGauge" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" BackgroundColor="White">
+                <SyncfusionGauge:SfCircularGauge.Scales>
+                    <SyncfusionGauge:Scale x:Name="scale" StartAngle="270" StartValue="0" EndValue="360" Interval="45" LabelOffset="0.75" SweepAngle="360" MinorTicksPerInterval="1" ShowLastLabel="False" ScaleStartOffset="0.99" ScaleEndOffset="0.9" LabelCreated="scale_LabelCreated" RimColor="#E0E0E0" LabelColor="#4B4B4B">
+                        <SyncfusionGauge:Scale.Pointers>
+                            <SyncfusionGauge:NeedlePointer x:Name="pointer1" Value="{Binding PointerValue}" Color="#f03e3e" Type="Triangle" LengthFactor="0.65" Thickness="30" KnobRadius="30" KnobColor="White" KnobStrokeWidth="3" KnobStrokeColor="#f03e3e" EnableAnimation="True"/>
+                        </SyncfusionGauge:Scale.Pointers>
+                        <SyncfusionGauge:Scale.MajorTickSettings>
+                            <SyncfusionGauge:TickSettings x:Name="majorTicks" StartOffset="0.9" EndOffset="0.83" Thickness="2" Color="#9E9E9E"/>
+                        </SyncfusionGauge:Scale.MajorTickSettings>
+                        <SyncfusionGauge:Scale.MinorTickSettings>
+                            <SyncfusionGauge:TickSettings x:Name="minorTicks" StartOffset="0.9" EndOffset="0.85" Thickness="2" Color="#9E9E9E"/>
+                        </SyncfusionGauge:Scale.MinorTickSettings>
+                    </SyncfusionGauge:Scale>
+                </SyncfusionGauge:SfCircularGauge.Scales>
+            </SyncfusionGauge:SfCircularGauge>
+        </Grid>
+</ContentPage.Content>
+</ContentPage>
