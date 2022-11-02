@@ -1,6 +1,6 @@
 # How to show the direction by latitude and longitude value in SfCircularGauge
 
-This repository contains sample for how to show the direction by latitude and longitude value in the [Syncfusion Xamarin.Forms Circular Gauge](https://help.syncfusion.com/xamarin/circular-gauge/getting-started) control.
+This repository contains sample to show the direction by latitude and longitude value in the [Syncfusion Xamarin.Forms Circular Gauge](https://help.syncfusion.com/xamarin/circular-gauge/getting-started) control.
 
 Please refer the KB through this [link](https://www.syncfusion.com/kb/10606/how-to-show-the-direction-by-latitude-and-longitude-values-in-sfcirculargauge-using).
 
