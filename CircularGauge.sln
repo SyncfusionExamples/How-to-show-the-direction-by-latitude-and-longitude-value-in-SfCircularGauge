@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.27130.2027
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32922.545
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CircularGauge.Android", "CircularGauge\CircularGauge.Android\CircularGauge.Android.csproj", "{8F7D9D2C-D548-4857-BEA0-E8D971898F52}"
 EndProject
@@ -213,6 +213,8 @@ Global
 		{EAC4B345-01AF-4157-9B8E-0611554F9D88}.AppStore|x86.Build.0 = Release|x86
 		{EAC4B345-01AF-4157-9B8E-0611554F9D88}.AppStore|x86.Deploy.0 = Release|x86
 		{EAC4B345-01AF-4157-9B8E-0611554F9D88}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{EAC4B345-01AF-4157-9B8E-0611554F9D88}.Debug|Any CPU.Build.0 = Debug|x86
+		{EAC4B345-01AF-4157-9B8E-0611554F9D88}.Debug|Any CPU.Deploy.0 = Debug|x86
 		{EAC4B345-01AF-4157-9B8E-0611554F9D88}.Debug|ARM.ActiveCfg = Debug|ARM
 		{EAC4B345-01AF-4157-9B8E-0611554F9D88}.Debug|ARM.Build.0 = Debug|ARM
 		{EAC4B345-01AF-4157-9B8E-0611554F9D88}.Debug|ARM.Deploy.0 = Debug|ARM
